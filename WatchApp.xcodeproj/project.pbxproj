@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		AF2F4FB71E87B05A004332AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F4FB61E87B05A004332AD /* AppDelegate.swift */; };
-		AF2F4FB91E87B05A004332AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F4FB81E87B05A004332AD /* ViewController.swift */; };
+		AF2F4FB91E87B05A004332AD /* StocksAndCurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F4FB81E87B05A004332AD /* StocksAndCurrencyViewController.swift */; };
 		AF2F4FBC1E87B05A004332AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF2F4FBA1E87B05A004332AD /* Main.storyboard */; };
 		AF2F4FBE1E87B05A004332AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF2F4FBD1E87B05A004332AD /* Assets.xcassets */; };
 		AF2F4FC11E87B05A004332AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF2F4FBF1E87B05A004332AD /* LaunchScreen.storyboard */; };
+		AF2F4FC91E87D72F004332AD /* StocksAndCurrencySingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F4FC81E87D72F004332AD /* StocksAndCurrencySingleton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AF2F4FB31E87B05A004332AD /* WatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF2F4FB61E87B05A004332AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF2F4FB81E87B05A004332AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF2F4FB81E87B05A004332AD /* StocksAndCurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksAndCurrencyViewController.swift; sourceTree = "<group>"; };
 		AF2F4FBB1E87B05A004332AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF2F4FBD1E87B05A004332AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF2F4FC01E87B05A004332AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF2F4FC21E87B05A004332AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF2F4FC81E87D72F004332AD /* StocksAndCurrencySingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StocksAndCurrencySingleton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				AF2F4FB61E87B05A004332AD /* AppDelegate.swift */,
-				AF2F4FB81E87B05A004332AD /* ViewController.swift */,
+				AF2F4FB81E87B05A004332AD /* StocksAndCurrencyViewController.swift */,
 				AF2F4FBA1E87B05A004332AD /* Main.storyboard */,
 				AF2F4FBD1E87B05A004332AD /* Assets.xcassets */,
 				AF2F4FBF1E87B05A004332AD /* LaunchScreen.storyboard */,
 				AF2F4FC21E87B05A004332AD /* Info.plist */,
+				AF2F4FC81E87D72F004332AD /* StocksAndCurrencySingleton.swift */,
 			);
 			path = WatchApp;
 			sourceTree = "<group>";
@@ -137,7 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF2F4FB91E87B05A004332AD /* ViewController.swift in Sources */,
+				AF2F4FB91E87B05A004332AD /* StocksAndCurrencyViewController.swift in Sources */,
+				AF2F4FC91E87D72F004332AD /* StocksAndCurrencySingleton.swift in Sources */,
 				AF2F4FB71E87B05A004332AD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +265,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P2WZ3SNT59;
 				INFOPLIST_FILE = WatchApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kgtruevision.josephNicholas.WatchApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,6 +279,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P2WZ3SNT59;
 				INFOPLIST_FILE = WatchApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kgtruevision.josephNicholas.WatchApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +306,7 @@
 				AF2F4FC71E87B05A004332AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
