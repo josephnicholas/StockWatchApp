@@ -43,7 +43,7 @@ class StocksAndCurrencyViewController: UIViewController, UITableViewDataSource, 
     
         //UITableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let managerSingleton:StocksAndCurrencySingleton = StocksAndCurrencySingleton.sharedInstance;
+        let _:StocksAndCurrencySingleton = StocksAndCurrencySingleton.sharedInstance;
         //managerSingleton.printTest();
     }
     //Customize UI for Tables
@@ -54,7 +54,7 @@ class StocksAndCurrencyViewController: UIViewController, UITableViewDataSource, 
             cell.backgroundColor = UIColor(red: 255.0/255.0, green: 59.0/255.0, blue: 48.0/255.0, alpha: 1.0);
         case let x where x > 0.0:
             cell.backgroundColor = UIColor(red: 76.0/255.0, green: 217.0/255.0, blue: 100.0/255.0, alpha: 1.0);
-        case let x:
+        case let _:
             cell.backgroundColor = UIColor(red: 44.0/255.0, green: 186.0/255.0, blue: 231.0/255.0, alpha: 1.0);
         }
         
